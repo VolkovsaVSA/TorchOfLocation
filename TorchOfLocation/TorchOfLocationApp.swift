@@ -11,7 +11,8 @@ import SwiftUI
 struct TorchOfLocationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(LocationManager(latitude: 0, longitude: 0))
         }
     }
 }
